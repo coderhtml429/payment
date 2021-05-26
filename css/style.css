@@ -1,0 +1,273 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+}
+
+button,
+a {
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+@font-face {
+	font-family: "ALSSchlangesans";
+	src: url(../fonts/ALSSchlangesans-Bold.otf);
+}
+
+body {
+	font-family: "ALSSchlangesans";
+	font-weight: bold;
+	color: rgb(71, 71, 71);
+}
+.container {
+	width: 100%;
+	max-width: 1630px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.payment {
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+}
+.payment-content {
+	display: flex;
+	justify-content: space-between;
+}
+.payment-logo{
+	padding-top: 35px;
+}
+.payment-logo svg {
+	max-width: 282px;
+}
+.payment-confirm {
+	margin-top: 93px;
+	display: flex;
+}
+.payment-confirm span{
+	padding-top: 3px;
+}
+.payment-confirm_title {
+font-size: 2.9vw;
+}
+.payment-confirm_text {
+	margin-left: 22px;
+}
+.payment-confirm_text p {
+	font-size: 1.8vw;
+	margin-top: 37px;
+	margin-bottom: 55px;
+}
+.color_txt {
+	color: #e57861;
+}
+.payment_btn {
+	display: inline-block;
+	font-size: 27px;
+	font-family: "ALSSchlangesans";
+	color: rgb(254, 254, 254);
+	font-weight: bold;
+	text-transform: uppercase;
+	background-image: -moz-linear-gradient(0deg, rgb(241, 158, 93) 0%, rgb(227, 115, 98) 100%);
+	background-image: -webkit-linear-gradient(0deg, rgb(241, 158, 93) 0%, rgb(227, 115, 98) 100%);
+	background-image: -ms-linear-gradient(0deg, rgb(241, 158, 93) 0%, rgb(227, 115, 98) 100%);
+	letter-spacing: 1.5px;
+padding: 44px 102px;
+	cursor: pointer;
+	border-radius: 80px;
+	text-align: center;
+}
+
+.payment-content_left {
+	width: 40%;
+	padding-bottom: 107px;
+}
+.payment-content_right {
+	width: 60%;
+}
+.payment-right_img {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+.payment_img {
+	max-width: 1132px;
+	width: 100%;
+}
+.small_img{
+	display: none;
+}
+@media(max-width:1500px){
+.payment-logo svg {
+    max-width: 225px;
+}
+.check_icon{
+	width: 40px;
+}
+.payment_btn {
+ 
+    font-size: 21px;
+		padding: 30px 85px
+}
+.payment-confirm {
+    margin-top: 65px;
+}
+.payment-confirm_text p {
+    margin-top: 29px;
+    margin-bottom: 30px;
+}
+.payment-logo {
+    padding-top: 28px;
+}
+}
+@media(max-width:1200px){
+.payment-logo svg {
+    max-width: 180px;
+}
+.check_icon{
+	width: 36px;
+}
+.payment-confirm {
+    margin-top: 35px;
+}
+.payment-confirm_text p {
+    margin-top: 23px;
+    margin-bottom: 24px;
+}
+.payment-logo {
+    padding-top: 22px;
+}
+.payment_btn {
+    font-size: 18px;
+    padding: 21px 67px;
+}
+}
+@media(max-width:991px){
+.payment-logo svg {
+    max-width: 144px;
+}
+.payment-logo {
+    padding-top: 0;
+}
+.check_icon{
+	width: 28px;
+}
+.payment_btn {
+    font-size: 15px;
+    padding: 20px 51px;
+}
+.payment-confirm {
+    margin-top: 28px;
+}
+
+.payment-confirm_title {
+    font-size: 2.7vw;
+}
+.payment-confirm_text p {
+    font-size: 1.8vw;
+}
+.payment-confirm_text p {
+    margin-top: 17px;
+    margin-bottom: 21px;
+}
+}
+
+@media(max-width:768px){
+	.payment-content{
+		flex-direction: column;
+	}
+
+.payment-right_img {
+		position: static;  
+}	
+.payment-logo svg {
+    max-width: 158px;
+}
+.payment-confirm_title {
+    font-size: 6.5vw;
+}
+.payment-confirm_text p {
+    font-size: 3.5vw;
+}
+.payment_btn {
+    padding: 28px 76px;
+		font-size: 20px;
+}
+
+.payment-content_left{
+	width: 100%;
+	margin-top: -11%;
+	order:1;
+	padding-bottom: 50px;
+}
+.payment-content_right{
+	width: 100%;
+	 position: relative;
+		top: -76px;
+    right: -15px;
+}
+.check_icon {
+    width: 35px;
+}
+.payment_btn{
+	margin-left: 39px;
+}
+
+}
+@media(max-width:576px){
+.payment_img{
+	display: none;
+}
+.small_img{
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.payment-confirm_title {
+    font-size: 8.1vw;
+}
+.payment-confirm_text p {
+    font-size: 5.1vw;
+}
+.payment_btn {
+padding: 18px 43px;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+}
+.payment-confirm_text {
+    margin-left: 17px;
+}
+.container{
+width: 100%;
+padding: 0;
+}
+.payment-content_right {
+    top: -78px;
+    right: 0px;
+}
+.payment-content_left{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: -50px;
+}
+.payment-logo {
+    padding-left: 15px;
+}
+.payment-confirm {
+    margin-top: 0px;
+}
+.payment-confirm_text p {
+    margin-top: 20px;
+    margin-bottom: 27px;
+}
+.check_icon {
+    width: 28px;
+}
+}
